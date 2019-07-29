@@ -1,0 +1,91 @@
+<html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAaZ_y1QYgS1G0SNLe09Ybk3SuCwM6pni8",
+    authDomain: "localtravocontactdetails.firebaseapp.com",
+    databaseURL: "https://localtravocontactdetails.firebaseio.com",
+    projectId: "localtravocontactdetails",
+    storageBucket: "",
+    messagingSenderId: "726748989913",
+    appId: "1:726748989913:web:9ff03514f7b7da40"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <body>
+    <center>
+
+      <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Querry Data Table</h2>
+
+<table style="width:70%;border:2px solid black;">
+
+  <tr >
+    <th style="border:2px solid black;">full name</th>
+    <th style="border:2px solid black;">Gmails</th> 
+    <th style="border:2px solid black;">Number</th>
+    <th style="border:2px solid black;">querry</th>
+
+  </tr>
+<tbody id="table_body" style="style="border:2px solid black;">
+  </tbody>
+</table>
+
+
+
+</center>
+
+
+</body>
+<style>
+td{
+  border:1px solid black;
+}
+</style>
+<script>
+$(document).ready(function(){
+  var rootRef= firebase.database().ref().child("users");
+    rootRef.on("child_added",snap =>{
+          
+  var name= snap.child("Name").val();
+  var mail= snap.child("Email").val();
+  var phone= snap.child("number").val();
+  var querry= snap.child("Querry").val();
+ 
+ 
+
+         
+        $("#table_body").append("<tr><td>" + name + "</td><td>"+ mail +"</td><td>" + phone + "</td><td>" + querry + "</td></tr>"); 
+});
+
+
+
+
+
+
+});
+
+
+</script>
+</html>

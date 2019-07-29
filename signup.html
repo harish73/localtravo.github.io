@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+
+<title>sign up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script src="java.js"></script>
+</head>
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD7lr-O-XtIN-wPXf_KY0cP5hN0q20Os0A",
+    authDomain: "localtravo.firebaseapp.com",
+    databaseURL: "https://localtravo.firebaseio.com",
+    projectId: "localtravo",
+    storageBucket: "",
+    messagingSenderId: "896820095638",
+    appId: "1:896820095638:web:57d9a794b1e4bf79"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+
+  <a href="becomeguide.html">Become A Guide</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div><br><Br>
+<div class="formm">
+<h2 style="text-align:center">BECOME GUIDE</h2>
+<p style="text-align:center;color:black;font-size:22px;">Fill in the detail</p>
+<div name="myform" >
+          <input type = "text" name = "fname" placeholder="First_Name" required  class="ff"  id="name" ><br/>
+         <input type = "text" name = "lname" placeholder="Last_Name" required  class="ff" id="lastname" ><br/>
+		 <input type = "email" name = "Email" placeholder="xyz@gmail.com" class="ff" required id="mail" ><br>
+		<input type = "number" name = "number" placeholder="12******89" class="ff" id="number"><br>
+	
+	<select class="ff" placeholder="language" required id="lang">
+  <option value="ENGLISH">ENGLISH</option>
+  <option value="HINDI">HINDI</option>
+  <option value="RUSSIAN">RUSSIAN</option>
+  <option value="URDU">URDU</option> 
+  <option value="CHINESE">CHINESE</option>
+  <option value="BENGALI">BENGALI</option>
+  <option value="TAMIL">TAMIL</option>
+  <option value="OTHER">OTHER</option>
+</select><br>
+<select class="ff" placeholder="Location"required id="loca">
+  <option value="AGRA">AGRA</option>
+  <option value="DELHI">DELHI</option>
+  <option value="GAZIABAAD">GAZIABAAD</option>
+  <option value="SIKANDRA">SIKANDRA</option> 
+  <option value="RAMBAGH">RAMBAGH</option>
+  <option value="ALIGARH">ALIGARH</option>
+  <option value="OTHER">OTHER</option>
+</select><br>
+<input type="date" name="dob"class="ff" id="dob"><br>
+	<input type="radio" name="gender" value="male" required   id="sex">Male
+	<input type="radio"name="gender" value="female" required id="sex" >Female<br>
+	
+		<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me  
+ <p style="font-size:15px;color:black;">By creating an account you agree to our <a href="termncondition.html" style="color:dodgerblue;">Terms & Conditions</a>.</p>
+ <input type="submit" value="SEND" onclick="Myfun();"style="background:#2ecc71; outline:none; border:none;color:white;">
+</div>
+</div>
+         
+<br><br>       
+<footer class="foot"><br><br>
+<table class="foot1">
+
+<td><h1>Contact Details:</h1><br>
+Mobile No.:8755399586<br>
+Email: Harishkushwaha73@gmail.com  </td>
+
+<a href="https://www.facebook.com/profile.php?id=100007469475108"><img src="https://img.icons8.com/clouds/100/000000/facebook-f.png"id="feet"></a>
+<a href="https://www.instagram.com/h.k._harry/"><img src="https://img.icons8.com/clouds/100/000000/instagram.png"id="feet"></a>
+<a href="https://twitter.com/search?q=HarishK49313728"><img src="https://img.icons8.com/clouds/100/000000/twitter.png"id="feet"></a>
+</table>
+<br><br>
+<center>
+<p style="margin-bottom:0px;font-size:10px;">&copy; LOCAL TRAVO PVT. LTD.- All Right Reserved</p></center><br><br></footer>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+body {margin: 0;
+ background-color:#4e5259;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+p{
+	color:white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+input[type=submit]{
+  border-radius:25px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555;
+  color: white;
+}
+.foot{
+	background-color:black;
+	margin-bottom:0px;
+}
+
+.con {
+	font-size:20px;
+	font-family:Comic Sans MS;
+	border-radius:25px;
+	background-color:#f4ba55;
+	padding: 20px;
+	width:600px;
+	
+	}
+
+
+/* Modal Content/Box */
+.modal-content {
+	border-radius:20px;
+  background-color:#f4ba55;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.gallery {
+ display:inline-block;
+  border: 1px solid #ccc;
+  color:white;
+  margin-right:1px;
+  margin-bottom:9px;
+    transition:transform .5s;
+}
+
+.gallery:hover {
+  border: 2px solid black;
+  
+	 transform: scale(1.01);
+}
+.card {
+	background-color:white;
+	border-radius:30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  }
+  p{
+	  font-size:25px;
+	  font-family:Comic Sans MS;
+  }
+   th{
+	  font-size:15px;
+	  font-family:Comic Sans MS;
+  }
+
+.title {
+	
+  color: grey;
+  font-size: 18px;
+}
+
+
+.foot{background-color:black;
+color:white;
+margin-bottom:0px;
+}
+.foot1{
+	color:white;
+	margin-left:20px;
+}
+#feet{
+	float:right;
+	margin-right:20px;
+}
+
+.contain {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contain img {
+  width: 100%;
+  height: 100%;
+}
+
+ .btn {
+  background-color: #2ecc71;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+  color:white;
+} 
+.btn:hover {
+  background-color: powderblue;
+}
+
+.formm
+{   margin:0 auto;
+	width:50%;
+	padding:20px;
+	background:white;
+	color:black;
+	text-align:center;
+	box-shadow:2px 2px 15px lightgrey;
+}
+.ff
+{ 
+	width:50%;
+	border:none;
+	transition:600ms all;
+	border-bottom:1px solid black;
+	height:30px;
+	margin-bottom:6px;
+	outline:none;
+}
+.ff:focus
+{
+  width:56%;
+  border-bottom-color:green;
+}
+::placeholder
+{
+	font-size:17px;
+}

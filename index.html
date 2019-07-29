@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.3.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+    <script src="dist/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="dist/firebaseui.css" />
+<title>Travellers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script src="java.js"></script>
+<style>
+.headd
+{
+font-size:50px;
+}
+.headd1{
+font-size:30px;
+}
+.hh
+{
+background:url("taj1.png");
+background-size:cover;
+padding:60px;
+text-align:center;
+}
+.agra
+{
+font-family:Comic Sans MS; 
+color:red;
+}
+.local
+{
+font-family:Comic Sans MS; 
+color:red;
+}
+.contain
+{
+background:url("guide.png");
+background-size:cover;
+}
+.tt
+{
+font-size:30px;
+color:white;
+text-align:center;
+}
+.guide{
+color:white;
+text-align:center;
+font-size:30px;
+}
+.res{
+display:inline-block; 
+color:white;
+font-size:30px; 
+margin-right:90px;
+}
+.name
+{
+font-size:20px;
+
+color:black}
+input[type=text],input[type=number],input[type=email],input[type=password]{
+		width: 100%;
+		padding: 12px;
+		border: 1px solid grey;
+		border-radius: 10px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+		}
+input[type=submit]:hover {
+  background-color: #555;
+  color: white;
+}
+@media screen and (max-width:375px){
+.res{width:30px;}
+.res1{font-size:12px;}
+.headd{font-size:20px;}
+.headd1{font-size:15px;}
+.agra{font-size:30px;}
+.agra1{font-size:12px;}
+.local{font-size:20px;}
+.local1{font-size:12px;}
+.guide{font-size:20px;}
+.btn{font-size:11px; padding:12px 12px;}
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>  
+  <a href="becomeguide.html">Become A Guide</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+<!--Head section-->
+<header>
+<div class="hh"> 
+<p class="headd">Experience AGRA Like A Local</p>
+<p class="headd1">Connect with locals. Discover hidden gems.</p><br>
+<a href="signup.html">
+ <button type="button" class="btn">Become a Guide</button></a>
+</div><center>
+
+</header>
+<center>
+<p class="agra" id="place">AGRA</p>
+<p class="agra1">A place full of positive surprises, only known to a few.<br>
+Discover AGRA's hidden gems shared by locals.</p></center>
+<center><div class="gallery"> <a href="tajmahal.html"> <img src="tajmahal.jpg"  width="230" height="200"></a> <br>TAJMAHAL</div>
+<div class="gallery">   <img src="fort.jpg"  width="230" height="200"> <br>AGRA FORT</div>
+<div class="gallery"> <img src="itmad.jpg" width="230" height="200"><br>ITMAD-UD-DAULA</div>
+<div class="gallery"> <img src="https://www.holidify.com/images/compressed/attractions/attr_1734.jpg" width="230" height="200"><br>FATEHPUR SIKRI</div>
+<div class="gallery"> <img src="https://www.holidify.com/images/cmsuploads/compressed/akbar-tomb-agra-head-255_20171215172135.jpeg" width="230" height="200"><br>TOMB OF AKBAR</div>
+<div class="gallery">  <img src="https://www.holidify.com/images/compressed/attractions/attr_1701.jpg"  width="230" height="200"><br>JAMA MASJID</div>
+<div class="gallery">   <img src="https://www.holidify.com/images/cmsuploads/compressed/38894986240_90b92cffb0_k_20180315165812.jpg"  width="230" height="200"><br>MEHTAB BAGH</div>
+<div class="gallery"> <img src="https://www.holidify.com/images/cmsuploads/compressed/8483067719_fe72bef220_k_20180315173634.jpg" width="230" height="200"><bR>ANGURI BAGH</div>
+<div class="gallery"> <img src="https://www.holidify.com/images/cmsuploads/compressed/3530550211_615381bc2f_b_20180315181738.jpg" width="230" height="200"><br>CHINI KA RAUJA</div>
+<div class="gallery"> <img src="https://www.holidify.com/images/cmsuploads/compressed/Taj_museum_20180315174143.jpg" width="230" height="200"><br>TAJ MUSEUM</div>
+</center><center><br><br>
+<p class="local">LOCALS</p>
+<P class="local1">Meet up. It will be just like a friend showing you around.</P>
+<div class="card" style="display:inline-block;margin-bottom:15px;;margin-right:3px;">
+  <img src="rahul.jpeg" alt="John" style="width:100%;border-radius:180px;">
+  <p class="name">RAHUL CHAUHAN</p>
+  <p class="title">
+  DayalBagh University<br>
+  Age:20yrs</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.facebook.com/gagan.sharma.963871"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a> 
+    <a href="https://instagram.com/rahulchauhan0671?igshid=114zsl4i5xtuc"><img src="https://img.icons8.com/color/50/000000/instagram-new.png"></a>  
+     <a href="https://api.whatsapp.com/send?phone=919808316132"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"></a>   
+  </div>
+  <p><a href="tel:9808316132"><button>Contact:<br>9808316132</button></a></p>
+</div>
+<div class="card"  style="display:inline-block;margin-bottom:15px;;margin-right:3px;">
+  <img src="mohit.jpeg" alt="John" style="width:100%;border-radius:180px;" height="200px" >
+  <p class="name">MOHIT KUSHWAH</p>
+  <p class="title">Dr. BR Ambedkar University<br>
+  Age:19yrs</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.facebook.com/pawankumar.kushwaha.2"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a> 
+    <a href="https://instagram.com/mohitkw86?igshid=11t09b3sc6n8q"><img src="https://img.icons8.com/color/50/000000/instagram-new.png"></a>  
+     <a href="https://api.whatsapp.com/send?phone=919808622700"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"></a>  
+  </div>
+  <p><a href="tel:9068354207"><button>Contact:<br>9068354207</button></a></p>
+</div>
+<div class="card"  style="display:inline-block;margin-bottom:15px;;margin-right:3px;">
+  <img src="adarsh.jpeg" alt="John" style="width:100%;border-radius:180px;">
+  <p class="name">ADARSH YADAV</p>
+  <p class="title">
+  DayalBagh University<br>
+  Age:20yrs</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.facebook.com/adarsh.yadav.7315"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a> 
+    <a href="https://instagram.com/justazoo_?igshid=15j70roae1li7"><img src="https://img.icons8.com/color/50/000000/instagram-new.png"></a>  
+    <a href="https://api.whatsapp.com/send?phone=919760394403"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"></a>  
+   
+  </div>
+  <p><a href="tel:9760394403"><button>Contact:<br>9760394403</button></a></p>
+</div>
+<div class="card"  style="display:inline-block;margin-bottom:15px;margin-right:3px;">
+  <img src="shivam.jpeg" alt="John" style="width:100%;border-radius:180px;" height="200px" >
+  <p class="name">SHIVAM RATHORE</p>
+  <p class="title">
+  DayalBagh University<br>
+  Age:20yrs</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.facebook.com/shivam.rathore.1654700"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a> 
+    <a href="https://instagram.com/rathore5003?igshid=dj3g4zrkr3tw"><img src="https://img.icons8.com/color/50/000000/instagram-new.png"></a>  
+    <a href="https://api.whatsapp.com/send?phone=919808512255"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"></a>  
+    </div>
+  <p> <a href="tel:9808512255"><button>Contact:<br>9808512255</button></a></p>
+  
+</div></center>
+<br><br>
+<center>
+<p class="guide">Want to become a guide ?<br>Come join Us</p>
+ <a href="signup.html"><button class="btn">BECOME GUIDE</button></a>
+</p>
+</center><br>
+<center>
+<h1 style="font-family:Comic Sans MS;color:red;">CATEGORY</h1><br>
+<table style="margin:0 auto;text-align:center; padding:20px;"  cellspacing="25" border="2px" width="90%">
+<tr>
+<td><a href="#place"><img src="https://img.icons8.com/bubbles/100/000000/place-marker.png"></a><td>
+<td><img src="https://img.icons8.com/color/96/000000/5-star-hotel.png"></td>
+</tr>
+<tr>
+<th><center><a href="#place" style="color:white;">PLACES</a></center></th>
+<td ><th style="color:white;"><center>HOTELS</center></th>
+</td>
+</table></center>
+<center><br><BR>
+<center><p class="tt">Trust and Safety</p></center>
+<div><img src="https://img.icons8.com/ios/100/000000/checked-checkbox-filled.png" class="res"><br><span class="res1" style="margin-left:-93px;color:white;font-size:20px;">Verification</span></div>
+<div><a href="https://www.facebook.com/profile.php?id=100007469475108"><img src="https://img.icons8.com/color/96/000000/user.png"class="res"></a><br><span class="res1" style="margin-left:-93px;color:white;;font-size:20px;">Profile</span></div>
+<div><a href="mailto:harishkushwaha73@gmail.com"><img src="https://img.icons8.com/ios/100/000000/new-post-filled.png"class="res" ></a><br><span class="res1" style="margin-left:-93px;color:white;;font-size:20px;">Messaging</span></div>
+</center><br><Br>
+<footer class="foot"><br><br>
+<table class="foot1">
+
+<td><h1>Contact Details:</h1><br>
+Mobile No.:8755399586<br>
+Email: Harishkushwaha73@gmail.com  </td>
+
+<a href="https://www.facebook.com/profile.php?id=100007469475108"><img src="https://img.icons8.com/clouds/100/000000/facebook-f.png"id="feet"></a>
+<a href="https://www.instagram.com/h.k._harry/"><img src="https://img.icons8.com/clouds/100/000000/instagram.png"id="feet"></a>
+<a href="https://twitter.com/search?q=HarishK49313728"><img src="https://img.icons8.com/clouds/100/000000/twitter.png"id="feet"></a>
+</table>
+<br><br>
+<center>
+<p style="margin-bottom:0px;font-size:10px;">&copy; LOCAL TRAVO PVT. LTD.- All Right Reserved</p></center><br><br></footer>
+</body>
+
+</html>

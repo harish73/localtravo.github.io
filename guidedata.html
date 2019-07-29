@@ -1,0 +1,93 @@
+<html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD7lr-O-XtIN-wPXf_KY0cP5hN0q20Os0A",
+    authDomain: "localtravo.firebaseapp.com",
+    databaseURL: "https://localtravo.firebaseio.com",
+    projectId: "localtravo",
+    storageBucket: "",
+    messagingSenderId: "896820095638",
+    appId: "1:896820095638:web:57d9a794b1e4bf79"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <body>
+    <center>
+
+      <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Guide Data Table</h2>
+
+<table style="width:70%;border:2px solid black;">
+
+  <tr >
+    <th style="border:2px solid black;">Name</th>
+    <th style="border:2px solid black;">last name</th> 
+    <th style="border:2px solid black;">Gmails</th>
+    <th style="border:2px solid black;">Number</th>
+	<th style="border:2px solid black;">DOB</th>
+	<th style="border:2px solid black;">Gender</th>
+  </tr>
+<tbody id="table_body" style="style="border:2px solid black;">
+  </tbody>
+</table>
+
+
+
+</center>
+
+
+</body>
+<style>
+td{
+  border:1px solid black;
+}
+</style>
+<script>
+$(document).ready(function(){
+  var rootRef= firebase.database().ref().child("users");
+    rootRef.on("child_added",snap =>{
+          
+  var name= snap.child("FirstName").val();
+  var lname= snap.child("LastName").val(); 
+  var mail= snap.child("Email").val();
+  var phone= snap.child("Number").val();
+  var dob= snap.child("DOB").val();
+  var sex= snap.child("Gender").val();
+ 
+
+         
+        $("#table_body").append("<tr><td>" + name + "</td><td>"+ lname +"</td><td>" + mail + "</td><td>" + phone + "</td><td>" + dob + "</td><td>" + sex + "</td></tr>"); 
+});
+
+
+
+
+
+
+});
+
+
+</script>
+</html>
